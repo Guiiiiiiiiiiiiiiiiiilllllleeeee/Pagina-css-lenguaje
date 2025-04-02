@@ -4,22 +4,11 @@
   /* Coolors Exported Palette - https://coolors.co/2e5266-6e8898-9fb1bc-d3d0cb-e2c044 */
 
 /* SCSS HEX */
-:root {
---charcoal: #2e5266ff;
---slate-gray: #6e8898ff;
---cadet-gray: #9fb1bcff;
---timberwolf: #d3d0cbff;
---old-gold: #e2c044ff;
-
-
---gradient-top: linear-gradient(0deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-right: linear-gradient(90deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-bottom: linear-gradient(180deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-left: linear-gradient(270deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-top-right: linear-gradient(45deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-bottom-right: linear-gradient(135deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-top-left: linear-gradient(225deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-bottom-left: linear-gradient(315deg, #2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff);
---gradient-radial: radial-gradient(#2e5266ff, #6e8898ff, #9fb1bcff, #d3d0cbff, #e2c044ff)
-
+:root[data-tema="oscuro"] {
+  --color-primario: #0288D1;   
+  --color-secundario: #0277BD; 
+  --color-terciario: #01579B;  
+  --color-claro: #263238;      
+  --color-oscuro: #121212;     
+  --color-blanco: #E1F5FE;
 }
