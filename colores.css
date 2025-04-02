@@ -5,10 +5,9 @@
 
 /* SCSS HEX */
 :root {
+  --color-fondo: #abe0fff9; 
   --color-primario: #0288D1;   
-  --color-secundario: #0277BD; 
-  --color-terciario: #01579B;  
-  --color-claro: #263238;      
+  --color-terciario: #01579B;      
   --color-oscuro: #121212;     
   --color-blanco: #E1F5FE;
 }
