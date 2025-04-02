@@ -4,7 +4,7 @@
   /* Coolors Exported Palette - https://coolors.co/2e5266-6e8898-9fb1bc-d3d0cb-e2c044 */
 
 /* SCSS HEX */
-:root[data-tema="oscuro"] {
+:root {
   --color-primario: #0288D1;   
   --color-secundario: #0277BD; 
   --color-terciario: #01579B;  
