@@ -14,3 +14,41 @@ h3{
 p{
     
 }
+#nav p{
+    
+    background-color: var(--color-fondo);
+    transition: 0.5s;
+    color: var( --color-secundario);
+    
+}
+#nav li{
+    width: fit-content;
+}
+#nav p:hover{
+    color:red;
+    transform: scale(1.1);
+    
+}
+#log{
+    background-color: var(--color-blanco);
+    transition: 0.5s;
+     border: 2px solid var(--color-primario) ;
+     border-radius: 10px 10px 10px 10px;
+     
+   
+
+}
+button a:hover{
+    text-decoration: none;
+}
+#log:hover{
+    transform: scale(1.15);
+    
+}
+#portada{
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 30%;
+}
+section h3{
+background-color: var(--color-primario-fondo);
+}
