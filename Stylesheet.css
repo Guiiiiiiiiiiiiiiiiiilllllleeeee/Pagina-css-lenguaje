@@ -127,3 +127,9 @@ button:hover{
   background-color: var(--color-blanco);
   transform: scale(1.1);
 }
+
+#micr{
+  
+ border-radius: 10px;
+
+}
