@@ -233,3 +233,22 @@ figcaption {
   background-color: var(--color-blanco);
   transform: scale(1.1);
 }
+
+form{
+padding: 2px;
+word-spacing: 2px;
+}
+
+form input{
+  padding: 10px;
+  height: 20px;
+  border: 2px solid var(--color-primario);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  box-shadow: 4px 4px 4px 0px var(--color-primario);
+  transition: all 0.5s;
+}
