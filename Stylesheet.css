@@ -132,8 +132,8 @@ button:hover{
 border-radius: 10px;
 }
 footer{
-  height:50px;
-  line-height:50px;
+  height:30px;
+  line-height:30px;
   background:var(--color-primario);
   color:black;
   text-align:center;
@@ -141,4 +141,9 @@ footer{
   bottom:0;
   left:0;
   width:100%;
+}
+#C6 a{
+
+  height: 40px;
+
 }
