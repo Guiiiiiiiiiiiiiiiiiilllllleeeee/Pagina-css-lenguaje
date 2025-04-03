@@ -15,6 +15,39 @@ nav {
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
+aside {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 280px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+aside p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+#Buscar {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid var(--color-primario);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+img {
+    text-align: center;
+    margin: 20px;
+}
 img {
     text-align: center;
 	margin: 20px;
