@@ -14,21 +14,67 @@ h3{
 p{
     
 }
-#nav p{
-    
-    background-color: var(--color-fondo);
-    transition: 0.5s;
-    color: var( --color-secundario);
-    
+
+/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* LISTADO DE LOS DIFERENTES PUNTOS DE LA PAGINA */
+/* Estilos generales */
+#nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #01579B;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-#nav li{
-    width: fit-content;
+
+#nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-#nav p:hover{
-    color:red;
-    transform: scale(1.1);
-    
+
+#nav li:last-child {
+  border-bottom: none;
 }
+
+#nav a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+#nav a:hover {
+  background-color: #0288D1;
+}
+
+/* Submenú */
+#submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #01579B;
+  display: none;
+}
+
+#submenu li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#submenu a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* Mostrar submenú al pasar el ratón */
+#nav li:hover #submenu {
+  display: block;
+}
+/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 
 #portada{
     border-radius: 10px 10px 10px 10px;
