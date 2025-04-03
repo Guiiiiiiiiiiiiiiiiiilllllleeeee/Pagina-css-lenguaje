@@ -2,7 +2,7 @@ Proyecto de Desarrollo Web
 
 Integrantes y Responsabilidades
 
-Miembro 1: Adrián
+Miembro 1: Adrián Centeenrea
 
 Responsable de la estructura principal de la página.
 
