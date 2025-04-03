@@ -52,3 +52,26 @@ button a:hover{
 section h3{
 background-color: var(--color-primario-fondo);
 }
+#tabla{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-collapse: separate;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+#rounded{
+    border-top-left-radius: 30px;
+}
+#rounded2{
+    border-top-right-radius: 30px;
+}
+#rounded3{
+    border-bottom-left-radius: 30px;
+}
+#rounded4{
+    border-bottom-right-radius: 30px;
+}
+#tabla td,th{
+    border: 0px solid black;
+}
