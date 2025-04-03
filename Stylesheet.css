@@ -358,3 +358,17 @@ form input:focus {
   transition: all 0.5s;
   background-color: var(--color-blanco);
 }
+
+form button{
+
+
+
+}
+
+fieldset{
+  border: var(--color-fondo);
+}
+
+fieldset hr{
+border: var(--color-fondo);
+}
