@@ -298,6 +298,7 @@ figcaption {
 }
 
 form{
+text-align: left;
 padding: 2px;
 word-spacing: 2px;
 width: 80%;
