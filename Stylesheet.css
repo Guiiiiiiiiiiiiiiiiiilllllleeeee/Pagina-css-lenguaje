@@ -75,3 +75,9 @@ background-color: var(--color-primario-fondo);
 #tabla td,th{
     border: 0px solid black;
 }
+
+#sesion form{
+
+    background-color: var(--color-blanco);
+
+}
