@@ -29,19 +29,7 @@ p{
     transform: scale(1.1);
     
 }
-#log{
-    background-color: var(--color-blanco);
-    transition: 0.5s;
-    border: 2px solid var(--color-primario) ;
-    border-radius: 10px 10px 10px 10px;
-}
-button a:hover{
-    text-decoration: none;
-}
-#log:hover{
-    transform: scale(1.15);
-    
-}
+
 #portada{
     border-radius: 10px 10px 10px 10px;
     margin-right: 30%;
@@ -124,4 +112,18 @@ background-color: var(--color-primario-fondo);
     transition: 0.5s;
     border: 2px solid var(--color-primario) ;
     border-radius: 10px 10px 10px 10px;
+}
+button{
+  border-radius: 5px;
+  background-color: var(--color-fondo);
+  transition: 0.5s;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    
+}
+button:hover{
+  background-color: var(--color-blanco);
+  transform: scale(1.1);
 }
