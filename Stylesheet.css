@@ -388,7 +388,7 @@ width: 80%;
 height: 90%;
 }
 
-form input{
+input{
   padding: 10px;
   height: 28px;
   border: 2px solid var(--color-primario-fondo);
