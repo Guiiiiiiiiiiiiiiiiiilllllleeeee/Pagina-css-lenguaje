@@ -13,7 +13,6 @@ header{
 nav {
 	padding: 10px;
 	border-radius: 10px;
-  margin-top: 25px;
 	margin-bottom: 20px;
 }
 aside {
@@ -28,10 +27,10 @@ aside {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: var(--color-blanco);
     font-weight: bold;
+	z-index: 1000; 
+	position: fixed;
 }
-#noticias{
-  margin-top: 10%;
-}
+
 aside p {
     font-size: 1em;
     line-height: 1.4;
@@ -45,7 +44,12 @@ aside p {
     border-radius: 5px;
     font-size: 16px;
 }
-
+iframe {
+    margin-top: 20px; /* Separación entre el buscador y el video */
+    width: 80%; /* Ajusta el tamaño del video según tus necesidades */
+    height: auto;
+    max-width: 600px; /* Asegura que el video no sea demasiado grande */
+}
 
 img {
     text-align: center;
