@@ -397,15 +397,15 @@ form input:focus {
 }
 
 fieldset{
-border: var(--color-fondo);
-}
-
-fieldset hr{
-border: var(--color-fondo);
-}
-
-#formc {
-width: 400px;
 background-color: var(--color-blanco);
+border: none;
+border-radius: 15px;
+}
 
+fieldset label{
+font-weight: bold;
+}
+
+fieldset input{
+box-shadow: none;
 }
