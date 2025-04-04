@@ -13,7 +13,7 @@ header{
 nav {
 	padding: 10px;
 	border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
 	margin-bottom: 20px;
 }
 aside {
@@ -29,7 +29,9 @@ aside {
     color: var(--color-blanco);
     font-weight: bold;
 }
-
+#noticias{
+  margin-top: 10%;
+}
 aside p {
     font-size: 1em;
     line-height: 1.4;
@@ -158,6 +160,7 @@ button:hover, input[type="submit"]:hover{
     z-index: -1;
     margin-left: 21%;
     margin-top: 9%;
+    margin-bottom: 2%;
 }
 section h3{
 background-color: var(--color-primario-fondo);
