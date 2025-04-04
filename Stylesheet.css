@@ -239,46 +239,6 @@ background-color: var(--color-primario-fondo);
     padding: 2px;
 }
 
-
-/*Botones login*/
-#Crearcuentaid{
-    background-color: var(--color-blanco);
-    transition: 0.5s;
-    border: 2px solid var(--color-primario) ;
-    border-radius: 0px 15px 0px 15px;
-    padding: 4px;
-    margin-left: 10px;
-    margin-top: 8px;
-}
-#politicaid{
-box-shadow: none;
-}
-#logininiciar{
-  background-color: var(--color-blanco);
-  transition: 0.5s;
-  border: 2px solid var(--color-primario) ;
-  border-radius: 0px 15px 0px 15px;
-  padding: 4px;
-  margin-left: 10px;
-  margin-top: 8px;
-}
-
-#micr{  
-border-radius: 10px;
-}
-
-footer{
-  height:30px;
-  line-height:30px;
-  background:var(--color-primario);
-  color:black;
-  text-align:center;
-  position:bottom;
-  bottom:0;
-  left:0;
-  width:100%;
-}
-
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ============================= */
@@ -427,6 +387,12 @@ input:focus {
   transition: all 0.5s;
   background-color: var(--color-blanco);
 }
+input:hover{
+
+background-color: var(--color-primario-fondo);
+
+}
+
 aside input{
 background-color: var(--color-blanco);
 border: 1px solid var(--color-primario-fondo);
@@ -445,4 +411,43 @@ font-weight: bold;
 
 input::placeholder{
   color:black;
+}
+
+/*Botones login*/
+#Crearcuentaid{
+  background-color: var(--color-blanco);
+  transition: 0.5s;
+  border: 2px solid var(--color-primario) ;
+  border-radius: 0px 15px 0px 15px;
+  padding: 4px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+#politicaid{
+box-shadow: none;
+}
+#logininiciar{
+background-color: var(--color-blanco);
+transition: 0.5s;
+border: 2px solid var(--color-primario) ;
+border-radius: 0px 15px 0px 15px;
+padding: 4px;
+margin-left: 10px;
+margin-top: 8px;
+}
+
+#micr{  
+border-radius: 10px;
+}
+/*footer*/
+footer{
+height:30px;
+line-height:30px;
+background:var(--color-primario);
+color:black;
+text-align:center;
+position:bottom;
+bottom:0;
+left:0;
+width:100%;
 }
