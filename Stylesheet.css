@@ -296,7 +296,7 @@ footer{
   padding: 5px;
   width: 200px; /* Ancho fijo de cada producto */
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #ffffff;
 
   display: flex; /* Convierte cada <li> en un contenedor flexible */
   flex-direction: column;
@@ -318,7 +318,7 @@ footer{
   margin-bottom: 15px;
   height: auto; /* Mantiene la proporción original de la imagen */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(148, 148, 148, 0.2);
 
   display: block;
 }
