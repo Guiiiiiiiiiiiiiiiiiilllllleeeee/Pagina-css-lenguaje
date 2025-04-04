@@ -388,9 +388,7 @@ input:focus {
   background-color: var(--color-blanco);
 }
 input:hover{
-
 background-color: var(--color-primario-fondo);
-
 }
 
 aside input{
@@ -399,6 +397,7 @@ border: 1px solid var(--color-primario-fondo);
 box-shadow: 4px 4px 4px 2px var(--color-primario-fondo);
 }
 
+/*Filedset Comentarios*/
 fieldset{
 background-color: var(--color-blanco);
 border: none;
@@ -409,6 +408,31 @@ font-weight: bold;
 }
 input::placeholder{
   color:black;
+}
+textarea{
+border: none;
+background-color: white;
+max-width: 400px;
+max-height: 60px;
+min-width: 200px;
+min-height: 30px;
+resize: none;
+margin: 5px;
+padding: 10px;
+border: none;
+border: 3px solid var(--color-primario-fondo);
+font-size: 18px;
+outline: none;
+transition: all 0.5s;
+}
+
+textarea:hover{
+  background-color: var(--color-primario-fondo);
+}
+textarea:focus{
+  border:none;
+  box-shadow: none;
+  transition: all 0.5s;
 }
 
 /*Botones login*/
@@ -425,7 +449,6 @@ input::placeholder{
 box-shadow: none;
 }
 #logininiciar{
-
 background-color: var(--color-blanco);
 transition: 0.5s;
 border: 2px solid var(--color-primario) ;
