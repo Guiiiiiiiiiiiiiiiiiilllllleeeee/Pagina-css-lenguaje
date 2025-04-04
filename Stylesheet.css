@@ -156,6 +156,7 @@ button:hover, input[type="submit"]:hover{
 #portada{
     border-radius: 10px 10px 10px 10px;
     width: 75%;
+    max-height: 600px;
     position: absolute;
     z-index: -1;
     margin-left: 21%;
