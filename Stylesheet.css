@@ -213,6 +213,7 @@ button{
   border-radius: 5px;
   background-color: var(--color-primario-fondo);
   transition: 0.5s;
+  border: var(--color-secundario);
 }
 button a{
     text-decoration: none;
@@ -359,14 +360,8 @@ form input:focus {
   background-color: var(--color-blanco);
 }
 
-form button{
-
-
-
-}
-
 fieldset{
-  border: var(--color-fondo);
+border: var(--color-fondo);
 }
 
 fieldset hr{
