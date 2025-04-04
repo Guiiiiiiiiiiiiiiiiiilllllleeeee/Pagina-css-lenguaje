@@ -489,8 +489,16 @@ top: 4px;
   border: 6px solid var(--color-oscuro);
 }
 
+/*Select multiple/option */
 #op_id{
   background-color: var(--color-blanco);
   border: none;
+}
+#op_id::-webkit-scrollbar{
   display: none;
+}
+
+#teimpoid{
+box-shadow: none;
+
 }
