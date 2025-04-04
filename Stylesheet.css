@@ -129,11 +129,14 @@ p{
 #portada{
     border-radius: 10px 10px 10px 10px;
     margin-right: 30%;
+    align-items: center;
 }
 section h3{
 background-color: var(--color-primario-fondo);
 }
-
+.imagen2{
+  align-items: center;
+}
 /* Estilos generales para la tabla */
 .tabla {
     width: 70%;
@@ -160,7 +163,10 @@ background-color: var(--color-primario-fondo);
     border-top: 2px solid #ddd; /* Borde más grueso en la parte superior */
     border-bottom: 2px solid #ddd; /* Borde más grueso en la parte inferior */
   }
-  
+  #UP {
+    font-size: 30px;
+    align-items:center;
+  }
   /* Columna de imágenes */
   .tabla img {
     max-width: 100%;
@@ -366,4 +372,16 @@ border: var(--color-fondo);
 
 fieldset hr{
 border: var(--color-fondo);
+}
+@media screen and (max-width: 600px) {  
+  *{
+    position: relative;
+  }
+}
+.enviar{
+  transition: 0.5s;
+  height: fit-content;
+}
+.enviar:hover{
+  background-color: var(--color-primario);
 }

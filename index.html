@@ -3,12 +3,13 @@
 	<head>
 		<title>Minecraft Técnico</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="colores.css">
+		<link rel="stylesheet" href="Stylesheet.css">
 	</head>
 	<body>
-	<header><h2 id="UP" align="center">Minecraft Técnico</h2></header>
-	<img width=40% align="right" src="https://i.blogs.es/39ece2/portada-guia-minecraft/1366_521.jpeg" id="portada"/>
-	<link rel="stylesheet" href="colores.css">
-	<link rel="stylesheet" href="Stylesheet.css">
+	<header><h2 id="UP" >Minecraft Técnico</h2></header>
+	<img width=40%  src="https://i.blogs.es/39ece2/portada-guia-minecraft/1366_521.jpeg" id="portada"/>
+
 	<nav><!--Índice de contenido-->
 	<ul type="none">
 	<button id="log"><a href="login.html">Inciciar sesión o Crea una cuenta</a></button>
@@ -41,7 +42,7 @@
 	  </ol>
 	  
 	</nav><!--Cierre Índice de contenido-->
-	<hr></hr>
+	<hr>
 	<main><!--Apertura Main-->
 	
 	<!--Poner fotos de noticias o similar dentro de una tabla-->
@@ -59,7 +60,7 @@
 		<tbody>
 		  <tr>
 			<td>Actualización de Minecraft Trails & Tales
-			  <a target="blank" href="https://www.minecraft.net/es-es/updates/trails-and-tales"><br>Pincha aquí para ver más</a>
+			  <a target="_blank" href="https://www.minecraft.net/es-es/updates/trails-and-tales"><br>Pincha aquí para ver más</a>
 			</td>
 			<td>User1: El día 3 de Diciembre sale la nueva actualización 1.22</td>
 			<td rowspan="2"><img height="90" width="160" src="./img/part2.jpg" /></td>
@@ -68,19 +69,19 @@
 		  </tr>
 		  <tr>
 			<td>Información sobre el desarrollo de la película y nueva actualización
-			  <a target="blank" href="https://www.youtube.com/watch?v=H-quD3fWOjU"><br> Pincha aquí para ver más</a>
+			  <a target="_blank" href="https://www.youtube.com/watch?v=H-quD3fWOjU"><br> Pincha aquí para ver más</a>
 			</td>
 			<td>User2: Han mejorado mucho la película en el nuevo trailer</td>
 		  </tr>
 		  <tr>
-			<td>Nuevo Mob el Creaking!!! <a target="blank" href="https://minecraft.wiki/w/Creaking"><br> Pincha aquí para ver más</a></td>
-			<td>User3: Se te ha corrompido el mundo de minecraft? <br><a target="blank" href="https://www.reddit.com/r/Minecraft/comments/b4sa4p/guide_how_to_recover_a_lostcorrupt_world_on/?tl=es-es&rdt=40241">Solución</a></td>
+			<td>Nuevo Mob el Creaking!!! <a target="_blank" href="https://minecraft.wiki/w/Creaking"><br> Pincha aquí para ver más</a></td>
+			<td>User3: Se te ha corrompido el mundo de minecraft? <br><a target="_blank" href="https://www.reddit.com/r/Minecraft/comments/b4sa4p/guide_how_to_recover_a_lostcorrupt_world_on/?tl=es-es&rdt=40241">Solución</a></td>
 			<td rowspan="2"><img height="90" width="160" src="./img/chalet.jpg" /></td>
 			<td rowspan="2"><img height="90" width="160" src="./img/castillo2.jpg" /></td>
 			<td rowspan="2" id="rounded4"><img height="90" width="160" src="./img/templo.jpg" /></td>
 		  </tr>
 		  <tr>
-			<td id="rounded3">Nuevo bioma Pale Garden!!!<a target="blank" href="https://es.minecraft.wiki/w/Jardín_pálido"><br> Pincha aquí para ver más</a></td>
+			<td id="rounded3">Nuevo bioma Pale Garden!!!<a target="_blank" href="https://es.minecraft.wiki/w/Jardín_pálido"><br> Pincha aquí para ver más</a></td>
 			<td>User4: El nuevo bioma da algo de repelús, pero la nueva madera es bastante bonita para hacer casas</td>
 		  </tr>
 		</tbody>
@@ -123,11 +124,11 @@
 	<h3 id="C5">Youtubers de interes</h3>
 	
 	<p><strong>El RichMC</strong></p>
-	<a href="https://www.youtube.com/@ElRichMC" target="blank">Canal</a><br>
+	<a href="https://www.youtube.com/@ElRichMC" target="_blank">Canal</a><br>
 	<iframe width="400" height="300" src="https://www.youtube.com/embed/VkrYzPefX3I"></iframe>
 	
 	<p><strong>Farfadox</strong></p>
-	<a href="https://www.youtube.com/@Farfadox" target="blank">Canal</a><br>
+	<a href="https://www.youtube.com/@Farfadox" target="_blank">Canal</a><br>
 	<iframe width="400" height="300" src="https://www.youtube.com/embed/rPE78wwPWSI"></iframe>
 	
 	</section>
@@ -146,10 +147,10 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 <p>User4: Cuanto llevan jugando a Minecraft?</p>
 
 	<!--Poner formulario para comentar-->
-	<form>
+	<form action="#" method="post">
 	<fieldset>
 	<label for="comid">Escribe aquí algo que quieras comentar:<br></label>
-	<textarea rows="3" cols="40" placeholder="Tu comentario aquí..."></textarea>
+	<textarea rows="3" cols="40" placeholder="Tu comentario aquí..." name="eeee"></textarea>
 	<br>
 	<label for="visid">Visibilidad de tu perfil al comentar:<br></label>
 			<input type="radio" id="radio1" name="ejemplo" value="Visible"/>
@@ -169,9 +170,9 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 	<label for="visid">Tiempo de publicación: 1hora, 48horas, 1semana, Permanente.<br></label>
 	<input name="tiempocom" type="range" min="0" max="15" step="5"/>
 	<br>
-	<input name="imagenescom" type="file" multiple accept="img/*" size="1000"/>
+	<input name="imagenescom" type="file" multiple accept="image/*" size="1000"/>
 	<br>
-	<input name="enviar" type="submit"/>
+	<input name="enviar" type="submit" class="enviar"/>
 	<!--Boton enviar-->
 	</fieldset>
 	</form>
@@ -338,7 +339,7 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 	<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 	<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-	<hr></hr>
+	<hr>
 
 	<h4><a href="#UP">Volver Arriba</a></h4>
 	</main><!--Cierre Main-->
@@ -351,8 +352,8 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 					<option value="News">News</option>
 					<option value="Asistencia">Asistencia</option>
 			</datalist>
-	<br>
-	<iframe width="400" height="300" src="https://www.youtube.com/embed/0vKS0FOYNok?autoplay=1&mute=1&playlist=0vKS0FOYNok&loop=1&controls=0"></iframe>
+	<br><br>
+	<iframe width="280" height="180" src="https://www.youtube.com/embed/0vKS0FOYNok?autoplay=1&mute=1&playlist=0vKS0FOYNok&loop=1&controls=0"class="video" ></iframe>
 	
 	</aside>
 	<!--Contacto y licencia-->
@@ -363,12 +364,12 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 	<br>
 	<a href="tel:+34635094694">Telefono de contacto</a>
 	<br>
-	<a href="https://youtu.be/xvFZjo5PgG0?si=VNHKT6Vfq82FHjEA" target="blank">Otros</a>
+	<a href="https://youtu.be/xvFZjo5PgG0?si=VNHKT6Vfq82FHjEA" target="_blank">Otros</a>
 	<br>
 	<p>Mojang AB. TM Microsoft Corporation. CIF A12345678.<br>
 AVDA Europa, Parcela 2-5 y 2-6. Polígono industrial Las Salinas, 30840<br>
 Alhama de Murcia, Murcia. ESPAÑA.</p>
-		<img id="micr" align="center" src="./img/microsoft.png"/>
+		<img id="micr"  src="./img/microsoft.png" class="imagen2"/>
 
 	</footer>
 	
