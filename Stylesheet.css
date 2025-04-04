@@ -403,3 +403,9 @@ border: var(--color-fondo);
 fieldset hr{
 border: var(--color-fondo);
 }
+
+#formc {
+width: 400px;
+background-color: var(--color-blanco);
+
+}
