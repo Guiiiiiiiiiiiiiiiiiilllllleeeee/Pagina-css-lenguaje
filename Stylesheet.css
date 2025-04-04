@@ -44,10 +44,10 @@ aside p {
     border-radius: 5px;
     font-size: 16px;
 }
-iframe {
+main iframe{
     margin-top: 20px; /* Separación entre el buscador y el video */
     width: 80%; /* Ajusta el tamaño del video según tus necesidades */
-    height: auto;
+    height: 330px; /* Ajusta la altura del video según tus necesidades */
     max-width: 600px; /* Asegura que el video no sea demasiado grande */
 }
 
@@ -362,15 +362,15 @@ figcaption {
   background-color: var(--color-blanco);
   transform: scale(1.1);
 }
-
-form{
-margin-left: 25%;
-margin-right: 25%;
-text-align: left;
-padding: 2px;
-word-spacing: 2px;
+form {
+  margin: 0 auto;
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  max-width: 600px; /* Limita el ancho máximo */
+  text-align: left;
+  padding: 10px;
+  height: auto;
+  overflow: visible;
 }
-
 input{
   margin: 5px;
   padding: 10px;
@@ -412,6 +412,9 @@ font-weight: bold;
 input::placeholder{
   color:black;
 }
+h1{
+  font-family: 'Courier New', Courier, monospace;
+}
 textarea{
 border: none;
 background-color: white;
@@ -436,7 +439,12 @@ textarea:focus{
   box-shadow: none;
   transition: all 0.5s;
 }
-
+form input[type="submit"]  {
+  height:min-content;
+}
+form input[type="file"]  {
+  height:min-content;
+}
 /*Botones login*/
 #Crearcuentaid{
   background-color: var(--color-blanco);
@@ -449,4 +457,18 @@ textarea:focus{
 }
 #politicaid{
 box-shadow: none;
+}
+main h1,h2,h3{
+font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .tabla {
+    display: block;
+    overflow-x: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
