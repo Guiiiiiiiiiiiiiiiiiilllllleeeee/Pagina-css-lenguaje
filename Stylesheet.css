@@ -236,9 +236,7 @@ background-color: var(--color-primario-fondo);
   }
   
   #sesion h3 {
-
     padding: 2px;
-
 }
 
 #Crearcuentaid{
@@ -385,17 +383,17 @@ figcaption {
 }
 
 form{
+margin-left: 30%;
+margin-right: 30%;
 text-align: left;
 padding: 2px;
 word-spacing: 2px;
-width: 80%;
-height: 90%;
 }
 
 input{
   margin: 5px;
   padding: 10px;
-  height: 30px;
+  height: 20px;
   border: none;
   border-left: 3px solid var(--color-primario-fondo);
   border-top: 3px solid var(--color-primario-fondo);
