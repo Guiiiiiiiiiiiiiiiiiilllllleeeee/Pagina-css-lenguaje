@@ -13,7 +13,6 @@ header{
 nav {
 	padding: 10px;
 	border-radius: 10px;
-  margin-top: 25px;
 	margin-bottom: 20px;
 }
 aside {
@@ -28,10 +27,10 @@ aside {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: var(--color-blanco);
     font-weight: bold;
+	z-index: 1000; 
+	position: fixed;
 }
-#noticias{
-  margin-top: 10%;
-}
+
 aside p {
     font-size: 1em;
     line-height: 1.4;
@@ -45,7 +44,12 @@ aside p {
     border-radius: 5px;
     font-size: 16px;
 }
-
+iframe {
+    margin-top: 20px; /* Separación entre el buscador y el video */
+    width: 80%; /* Ajusta el tamaño del video según tus necesidades */
+    height: auto;
+    max-width: 600px; /* Asegura que el video no sea demasiado grande */
+}
 
 img {
     text-align: center;
@@ -71,97 +75,67 @@ p{
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* LISTADO DE LOS DIFERENTES PUNTOS DE LA PAGINA */
-/* --- Estilos generales --- */
-#nav, #contenedor_login {
+/* Estilos generales */
+#nav {
   list-style: none;
-  padding: 0; /* Elimina espacios internos y márgenes para que el diseño sea limpio */
-  margin: 0; /* Elimina espacios internos y márgenes para que el diseño sea limpio */
+  padding: 0;
+  margin: 0;
   background-color: #01579B;
-  width: 273px; /* Define un ancho fijo de 250 píxeles */
+  width: 250px;
   border-radius: 8px;
-  overflow: hidden; /* Evita que los elementos internos sobresalgan */
+  overflow: hidden;
 }
 
-/* --- Estilos de los elementos de la lista --- */
 #nav li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Añade una línea separadora tenue entre los elementos del menú */
-}
-#nav li:last-child {
-  border-bottom: none; /* Elimina la línea en el último elemento de la lista para que se vea más limpio */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* --- Estilos de los enlaces --- */
+#nav li:last-child {
+  border-bottom: none;
+}
+
 #nav a {
-  display: block; /* Hace que el enlace ocupe todo el ancho */
-  padding: 12px 16px; /* Espacio interno */
+  display: block;
+  padding: 12px 16px;
   text-decoration: none;
   color: white;
   font-size: 16px;
-  position: relative; /* Necesario para posicionar la línea animada (::after) */
-  transition: background 0.3s ease-in-out; /* Suaviza la transición del fondo al pasar el mouse */
+  transition: background 0.3s ease-in-out;
 }
 
 #nav a:hover {
   background-color: #0288D1;
 }
 
-#nav a::after { /* Efecto de línea animada debajo de cada opción */
-  content: ""; /* Crea un elemento visual sin contenido */
-  position: absolute; /* Se posiciona de forma independiente dentro del enlace */
-  left: 50%; /* Inicialmente centrado en el enlace */
-  bottom: 0; /* Ubicado en la parte inferior del enlace */
-  width: 0; /* Comienza con ancho 0 para la animación */
-  height: 2px; /* Grosor de la línea */
-  background: white;
-  transition: all 0.3s ease-in-out; /* Suaviza la animación */
-  transform: translateX(-50%); /* Centra la línea horizontalmente */
+/* Submenú */
+#submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #01579B;
+  display: none;
 }
 
-#nav a:hover::after { /* Expande la línea al pasar el mouse */
-  width: 100%; /* La línea se expande completamente */
-  left: 0; /* Asegura que la animación cubra todo el ancho */
-  transform: translateX(0); /* Restablece el desplazamiento */
+#submenu li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* LOGIN */
-#contenedor_login {
-  margin-bottom: 10px;
-}
-#login {
-  display: block;
-  text-align: center;
+#submenu a {
   padding: 10px 20px;
-  background-color: #007bff; /* Azul estilo Bootstrap */
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background 0.15s ease-in-out;
+  font-size: 14px;
 }
 
-#login:hover {
-  background-color: #0288D1; /* Azul más oscuro al pasar el ratón */
+/* Mostrar submenú al pasar el ratón */
+#nav li:hover #submenu {
+  display: block;
 }
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-*{
-  transition: all 0.5s;
-}
-button:hover, input[type="submit"]:hover{
-  transform: scale(1.1);
-}
+
 
 #portada{
     border-radius: 10px 10px 10px 10px;
-    width: 75%;
-    max-height: 600px;
-    position: absolute;
-    z-index: -1;
-    margin-left: 21%;
-    margin-top: 9%;
-    margin-bottom: 2%;
+    margin-right: 30%;
 }
 section h3{
 background-color: var(--color-primario-fondo);
@@ -174,32 +148,31 @@ background-color: var(--color-primario-fondo);
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
     background-color: var(--color-primario-fondo);
-    border-radius:10px 10px 10px 10px;
   }
   
   /* Estilos para las celdas y los encabezados */
   .tabla th, .tabla td {
     padding: 12px 15px;
     text-align: center;
-     /* Borde suave */
+    border: 1px solid #ddd; /* Borde suave */
     font-size: 16px;
     vertical-align: middle; /* Alineación vertical centrada */
   }
-  
   
   /* Estilo para los encabezados */
   .tabla th {
     background-color: var(--color-primario);   
     color: #333;
     font-weight: bold;
-    /* Borde más grueso en la parte inferior */
+    border-top: 2px solid #ddd; /* Borde más grueso en la parte superior */
+    border-bottom: 2px solid #ddd; /* Borde más grueso en la parte inferior */
   }
   
   /* Columna de imágenes */
   .tabla img {
     max-width: 100%;
     height: auto;
-     /* Bordes redondeados para las imágenes */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
     margin: 5px;
   }
   
@@ -216,11 +189,11 @@ background-color: var(--color-primario-fondo);
   
   /* Celdas con bordes redondeados */
   #rounded {
-    border-radius: 10px 0 0 ;
+    border-radius: 10px 0 0 10px;
   }
   
   #rounded2 {
-    border-radius: 0 10px 0px 0;
+    border-radius: 0 10px 10px 0;
   }
   
   #rounded3 {
@@ -243,6 +216,20 @@ background-color: var(--color-primario-fondo);
     border: 2px solid var(--color-primario) ;
     border-radius: 10px 10px 10px 10px;
 }
+button{
+  border-radius: 5px;
+  background-color: var(--color-primario-fondo);
+  transition: 0.5s;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    
+}
+button:hover{
+  background-color: var(--color-blanco);
+  transform: scale(1.1);
+}
 
 #micr{  
 border-radius: 10px;
@@ -261,80 +248,56 @@ footer{
 
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ============================= */
 /* ESTILOS DE LA GALERIA */
-/* ============================= */
-/* CONTENEDOR PRINCIPAL DE LA TIENDA */
+/* CONTENEDOR TIENDA */
 #tienda {
-  margin-top: 80px; /* Espaciado superior de 80px */
-  margin-bottom: 80px; /* Espaciado inferior de 80px */
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-
-/* SECCIÓN PRINCIPAL DE LA TIENDA */
-/* Crea la estructura general de la tienda con un fondo blanco, bordes redondeados y ancho del 95% de la pantalla. */
+/* SECCION TIENDA */
 #galeria_tienda {
-  text-align: center; /* Centra todo el contenido */
+  text-align: center;
   background-color: #ffffff;
-  margin: 20px auto; /* Margen automático para centrar */
+  margin: 20px auto;
   border-radius: 15px;
-  width: 95%; /* Ocupará el 95% del ancho de la pantalla */
-} 
+  width: 95%;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-/* TÍTULO DE LA GALERÍA DE PRODUCTOS */
-/* Estiliza el título de la tienda con un fondo verde, texto blanco y bordes redondeados. */
 .titulo_tienda {
-  font-size: 1.15rem; /* Tamaño del texto */
-  letter-spacing: 4px;
-  background-color: #007bff;
-  padding-top: 1.5px; /* Espaciado interno arriba */
-  padding-bottom: 1.5px; /* Espaciado interno abajo */
-  border-top-left-radius: 15px; /* Bordes redondeados en la esquina superior izquierda */
-  border-top-right-radius: 15px; /* Bordes redondeados en la esquina superior derecha */
-  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  background-color: rgb(196, 255, 188);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-/* ============================= */
-/* LISTA DE PRODUCTOS */
-/* ============================= */
+/* LISTA PRODUCTOS */
 .productos {
-  display: flex; /* Usa flexbox para organizar los productos en fila */
-  justify-content: space-around; /* Distribuye los productos uniformemente */
-  flex-wrap: wrap; /* Permite que los productos se acomoden en varias líneas si es necesario */
-  list-style-type: none; /* Quita los estilos de lista (puntos, números, etc.) */
-  padding: 0.5px; /* Espaciado interno mínimo */
-}
-
-/* Define el tamaño y los bordes de cada tarjeta de producto. */
-.productos li {
-  margin: 15px; /* Espaciado alrededor de cada producto */
-  border: 3.5px solid #ddd;
-  padding: 5px;
-  width: 200px; /* Ancho fijo de cada producto */
-  border-radius: 8px;
-  background-color: #ffffff;
-
-  display: flex; /* Convierte cada <li> en un contenedor flexible */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Centra los elementos dentro de cada tarjeta */
-}
-
-.productos figure {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; /* Asegura que el figure ocupe todo el ancho disponible */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
+.productos li {
+  margin: 15px;
+  border: 1px solid #ddd;
+  padding: 5x;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #fff;
+}
 
 .productos img {
-  max-width: 80%; /* La imagen no será más grande que su contenedor */
-  margin-top: 5px;
-  margin-bottom: 15px;
-  height: auto; /* Mantiene la proporción original de la imagen */
+  max-width: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(148, 148, 148, 0.2);
-
-  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .productos figcaption{
@@ -342,32 +305,26 @@ footer{
   max-width: 100%;
 }
 
-/* Cuando el usuario pasa el mouse sobre la imagen, esta se agranda ligeramente. */
 .productos figure img {
-  transition: transform 0.7s ease-out; /* Aplica la animacion */
-}
-.productos figure img:hover {
-  transform: scale(1.06); /* Aumenta el tamaño en un 6% al pasar el mouse */
+  transition: transform 0.5s ease-out; /* Aplica la transición en ambos casos */
 }
 
-/* ============================= */
+.productos figure img:hover {
+  transform: scale(1.06); /* Aumenta el tamaño en un 10% */
+}
 /* DESCRIPCION DEL PRODUCTO */
-/* ============================= */
 figcaption {
   font-size: 1rem;
   color: #333;
   margin-top: 10px;
 }
 
-/* ============================= */
-/* CONTENEDOR CON SCROLL */
-/* ============================= */
-/* Limita la altura del contenedor de productos y permite hacer scroll vertical si hay muchos elementos. */
+/* Contenedor con scroll */
 .contenedor_scroll {
-  max-height: 400px; /* Altura fija del contenedor */
-  overflow-y: auto; /* Activa el scroll vertical si se añade mas productos */
-  padding: 25px; /* Espaciado interno */
-  border: 1px solid #ffffff;
+  max-height: 400px; /* Altura fija para el scroll */
+  overflow-y: auto; /* Activa el scroll vertical */
+  padding: 10px;
+  border: 1px solid #ffffff; /* Opcional: borde para visualización */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #ffffff; /* Color de fondo opcional */
@@ -407,18 +364,4 @@ form input:focus {
   box-shadow: none;
   transition: all 0.5s;
   background-color: var(--color-blanco);
-}
-
-fieldset{
-background-color: var(--color-blanco);
-border: none;
-border-radius: 15px;
-}
-
-fieldset label{
-font-weight: bold;
-}
-
-fieldset input{
-box-shadow: none;
 }
