@@ -361,8 +361,8 @@ figcaption {
 }
 
 form{
-margin-left: 30%;
-margin-right: 30%;
+margin-left: 25%;
+margin-right: 25%;
 text-align: left;
 padding: 2px;
 word-spacing: 2px;
@@ -404,11 +404,9 @@ background-color: var(--color-blanco);
 border: none;
 border-radius: 15px;
 }
-
 fieldset label{
 font-weight: bold;
 }
-
 input::placeholder{
   color:black;
 }
@@ -427,6 +425,7 @@ input::placeholder{
 box-shadow: none;
 }
 #logininiciar{
+
 background-color: var(--color-blanco);
 transition: 0.5s;
 border: 2px solid var(--color-primario) ;
