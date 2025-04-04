@@ -393,20 +393,25 @@ height: 90%;
 }
 
 input{
+  margin: 5px;
   padding: 10px;
-  height: 28px;
-  border: 2px solid var(--color-primario-fondo);
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+  height: 30px;
+  border: none;
+  border-left: 3px solid var(--color-primario-fondo);
+  border-top: 3px solid var(--color-primario-fondo);
   font-size: 16px;
   background: transparent;
   outline: none;
-  box-shadow: 4px 4px 4px 0px var(--color-primario-fondo);
+  box-shadow: 4px 4px 4px 2px var(--color-primario);
   transition: all 0.5s;
 }
+aside input{
+background-color: var(--color-blanco);
+border: 1px solid var(--color-primario-fondo);
+box-shadow: 4px 4px 4px 2px var(--color-primario-fondo);
+}
 
-form input:focus {
+input:focus {
   border:none;
   box-shadow: none;
   transition: all 0.5s;
@@ -423,6 +428,6 @@ fieldset label{
 font-weight: bold;
 }
 
-fieldset input{
-box-shadow: none;
+input::placeholder{
+  color:black;
 }
