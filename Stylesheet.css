@@ -161,31 +161,32 @@ background-color: var(--color-primario-fondo);
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
     background-color: var(--color-primario-fondo);
+    border-radius:10px 10px 10px 10px;
   }
   
   /* Estilos para las celdas y los encabezados */
   .tabla th, .tabla td {
     padding: 12px 15px;
     text-align: center;
-    border: 1px solid #ddd; /* Borde suave */
+     /* Borde suave */
     font-size: 16px;
     vertical-align: middle; /* Alineación vertical centrada */
   }
+  
   
   /* Estilo para los encabezados */
   .tabla th {
     background-color: var(--color-primario);   
     color: #333;
     font-weight: bold;
-    border-top: 2px solid #ddd; /* Borde más grueso en la parte superior */
-    border-bottom: 2px solid #ddd; /* Borde más grueso en la parte inferior */
+    /* Borde más grueso en la parte inferior */
   }
   
   /* Columna de imágenes */
   .tabla img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados para las imágenes */
+     /* Bordes redondeados para las imágenes */
     margin: 5px;
   }
   
@@ -202,11 +203,11 @@ background-color: var(--color-primario-fondo);
   
   /* Celdas con bordes redondeados */
   #rounded {
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 ;
   }
   
   #rounded2 {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 0px 0;
   }
   
   #rounded3 {
