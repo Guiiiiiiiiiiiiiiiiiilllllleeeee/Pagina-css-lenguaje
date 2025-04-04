@@ -47,10 +47,7 @@ aside p {
 }
 
 
-img {
-    text-align: center;
-    margin: 20px;
-}
+
 img {
     text-align: center;
 	margin: 20px;
@@ -148,6 +145,7 @@ p{
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 *{
   transition: all 0.5s;
+  box-sizing: border-box;
 }
 button:hover, input[type="submit"]:hover{
   transform: scale(1.1);
@@ -181,7 +179,7 @@ background-color: var(--color-primario-fondo);
   .tabla th, .tabla td {
     padding: 12px 15px;
     text-align: center;
-     /* Borde suave */
+     
     font-size: 16px;
     vertical-align: middle; /* Alineación vertical centrada */
   }
@@ -209,7 +207,12 @@ background-color: var(--color-primario-fondo);
   /* Estilo para enlaces */
   .tabla a {
     text-decoration: none;
-    color: #007bff;
+    color: var(--color-secundario);
+    transition: 0.5s;
+  }
+  .tabla a:hover {
+   color: var(--color-blanco);
+   
   }
   
   
