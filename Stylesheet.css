@@ -470,3 +470,37 @@ font-family: 'Courier New', Courier, monospace;
     height: auto;
   }
 }
+/*footer*/
+footer{
+height:30px;
+line-height:30px;
+background:var(--color-primario);
+color:black;
+text-align:center;
+position:bottom;
+bottom:0;
+left:0;
+width:100%;
+}
+
+#radiobt input{
+box-shadow: none;
+appearance: none;
+border-radius: 50%;
+width: 16px;
+height: 16px;
+border: 3px solid var(--color-primario);
+transition: 0.2s all linear;
+margin-right: 5px;
+position: relative;
+top: 4px;
+}
+#radiobt input:checked {
+  border: 6px solid var(--color-oscuro);
+}
+
+#op_id{
+  background-color: var(--color-blanco);
+  border: none;
+  display: none;
+}
