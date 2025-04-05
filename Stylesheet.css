@@ -401,7 +401,8 @@ form input{
   box-shadow: 4px 4px 4px 0px var(--color-primario-fondo);
   transition: all 0.5s;
 }
-input:focus {
+
+form input:focus {
   border:none;
   box-shadow: none;
   transition: all 0.5s;
