@@ -164,16 +164,14 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 	<textarea rows="3" cols="40" placeholder="Tu comentario aquí..." name="eeee"></textarea>
 	<br>
 	<label for="visid">Visibilidad de tu perfil al comentar:<br></label>
-	<div id="radiobt">
 			<input type="radio" id="radio1" name="ejemplo" value="Visible"/>
 			<label for="radio1">Visble</label>
 			<input type="radio" id="radio2" name="ejemplo" value="Privado"/>
 			<label for="radio2">Privado</label>
 			<input type="radio" id="radio3" name="ejemplo" value="Grupo"/>
 			<label for="radio3">Grupo</label>
-	</div>
 	<br>
-	<select id="op_id" name="Etiqueta" multiple>
+	<select name="Etiqueta" multiple>
 					<option value="Construccion">#Construcción</option>
 					<option value="Granja">#Granja</option>
 					<option value="Paisaje">#Paisaje</option>
@@ -181,7 +179,7 @@ Y el juego se terminó, y el jugador despertó del sueño. Y el jugador empezó 
 	</select>
 	<br>
 	<label for="visid">Tiempo de publicación: 1hora, 48horas, 1semana, Permanente.<br></label>
-	<input id="tiempoid" name="tiempocom" type="range" min="0" max="15" step="5"/>
+	<input name="tiempocom" type="range" min="0" max="15" step="5"/>
 	<br>
 	<input name="imagenescom" type="file" multiple accept="image/*" size="1000"/>
 	<br>
