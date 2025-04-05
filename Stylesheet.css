@@ -13,6 +13,7 @@ header{
 nav {
 	padding: 10px;
 	border-radius: 10px;
+  margin-top: 25px;
 	margin-bottom: 20px;
 }
 aside {
@@ -27,10 +28,10 @@ aside {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: var(--color-blanco);
     font-weight: bold;
-	z-index: 1000; 
-	position: fixed;
 }
-
+#noticias{
+  margin-top: 10%;
+}
 aside p {
     font-size: 1em;
     line-height: 1.4;
@@ -44,12 +45,7 @@ aside p {
     border-radius: 5px;
     font-size: 16px;
 }
-iframe {
-    margin-top: 20px; /* Separación entre el buscador y el video */
-    width: 80%; /* Ajusta el tamaño del video según tus necesidades */
-    height: auto;
-    max-width: 600px; /* Asegura que el video no sea demasiado grande */
-}
+
 
 
 img {
@@ -239,7 +235,31 @@ background-color: var(--color-primario-fondo);
   }
   
   #sesion h3 {
+
     padding: 2px;
+
+}
+
+#Crearcuentaid{
+    background-color: var(--color-blanco);
+    transition: 0.5s;
+    border: 2px solid var(--color-primario) ;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#micr{  
+border-radius: 10px;
+}
+footer{
+  height:30px;
+  line-height:30px;
+  background:var(--color-primario);
+  color:black;
+  text-align:center;
+  position:bottom;
+  bottom:0;
+  left:0;
+  width:100%;
 }
 
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -364,89 +384,44 @@ figcaption {
 }
 
 form{
-margin-left: 25%;
-margin-right: 25%;
 text-align: left;
 padding: 2px;
 word-spacing: 2px;
+width: 80%;
+height: 90%;
 }
 
-input{
-  margin: 5px;
+form input{
   padding: 10px;
-  height: 20px;
-  border: none;
-  border-left: 3px solid var(--color-primario-fondo);
-  border-top: 3px solid var(--color-primario-fondo);
+  height: 28px;
+  border: 2px solid var(--color-primario-fondo);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   font-size: 16px;
   background: transparent;
   outline: none;
-  box-shadow: 4px 4px 4px 2px var(--color-primario);
+  box-shadow: 4px 4px 4px 0px var(--color-primario-fondo);
   transition: all 0.5s;
 }
-input:focus {
+
+form input:focus {
   border:none;
   box-shadow: none;
   transition: all 0.5s;
   background-color: var(--color-blanco);
 }
-input:hover{
-background-color: var(--color-primario-fondo);
-}
 
-aside input{
-background-color: var(--color-blanco);
-border: 1px solid var(--color-primario-fondo);
-box-shadow: 4px 4px 4px 2px var(--color-primario-fondo);
-}
-
-/*Filedset Comentarios*/
 fieldset{
 background-color: var(--color-blanco);
 border: none;
 border-radius: 15px;
 }
+
 fieldset label{
 font-weight: bold;
 }
-input::placeholder{
-  color:black;
-}
-textarea{
-border: none;
-background-color: white;
-max-width: 400px;
-max-height: 60px;
-min-width: 200px;
-min-height: 30px;
-resize: none;
-margin: 5px;
-padding: 10px;
-border: none;
-border: 3px solid var(--color-primario-fondo);
-font-size: 18px;
-outline: none;
-transition: all 0.5s;
-}
-textarea:hover{
-  background-color: var(--color-primario-fondo);
-}
-textarea:focus{
-  border:none;
-  box-shadow: none;
-  transition: all 0.5s;
-}
 
-/*Botones login*/
-#Crearcuentaid{
-  background-color: var(--color-blanco);
-  transition: 0.5s;
-  border: 2px solid var(--color-primario) ;
-  border-radius: 0px 15px 0px 15px;
-  padding: 4px;
-  margin-left: 10px;
-  margin-top: 8px;
-}
-#politicaid{
+fieldset input{
 box-shadow: none;
 }

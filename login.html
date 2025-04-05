@@ -13,11 +13,11 @@
 <form id="sesion">
 	<fieldset><!--Formulario sesión-->
 	<h3>Inicio de sesión</h3>
-			<input name="nomuser" type="text" placeholder="Nombre de usuario o mail"/>
+			<input name="nomuser" type="text" required placeholder="Nombre de usuario o mail"/>
 			<br>
-			<input name="password" type="password" maxlength="12" minlength="8" placeholder="Contraseña"/>
+			<input name="password" type="password" maxlength="12" minlength="8" required placeholder="Contraseña"/>
 			<br>
-			<button id="logininiciar"><img src="./img/user.png" width="10" height="10">Iniciar sesión</button>
+			<button><img src="./img/user.png" width="20" height="20"><br>Iniciar sesión</button>
 			<hr></hr>
 
 	<p><strong>Si no tienes cuenta. Registrate para poder comentar y subir tus creaciones.</strong></p>
@@ -35,9 +35,9 @@
 			<br>
 			<input name="crearpassword" id="crearpasswordid" type="password" placeholder="Contraseña"/>
 			<br>
-			<button id="Crearcuentaid">Crear cuenta</button>
+			<button>Crear cuenta</button>
 			<br>
-			<input id="politicaid" name="politica" type="checkbox"/>
+			<input id="politicaid" required name="politica" type="checkbox"/>
 			<label for="Politica">Aceptas nuestras Condiciones y nuestra Política de privacidad</label>
 	</fieldset>
 	</form>
