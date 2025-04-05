@@ -382,6 +382,10 @@ input{
   box-shadow: 4px 4px 4px 2px var(--color-primario);
   transition: all 0.5s;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 input:focus {
   border:none;
   box-shadow: none;
