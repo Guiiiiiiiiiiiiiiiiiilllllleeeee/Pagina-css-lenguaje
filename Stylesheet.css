@@ -16,7 +16,7 @@ nav {
 	margin-bottom: 20px;
 }
 aside {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     width: 280px;
@@ -27,8 +27,6 @@ aside {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     color: var(--color-blanco);
     font-weight: bold;
-	z-index: 1000; 
-	position: fixed;
 }
 
 aside p {
@@ -45,10 +43,10 @@ aside p {
     font-size: 16px;
 }
 iframe {
-    margin-top: 20px; /* Separación entre el buscador y el video */
-    width: 80%; /* Ajusta el tamaño del video según tus necesidades */
+    margin-top: 20px;
+    width: 80%;
     height: auto;
-    max-width: 600px; /* Asegura que el video no sea demasiado grande */
+    max-width: 600px; 
 }
 
 img {
@@ -61,16 +59,17 @@ img {
 }
 h1{
     font-family: Impact, sans-serif;
+	font-size: 2em;
 }
 h2{
     font-family: Impact, sans-serif;
+	font-size: 1.5em;
 }
 h3{
     font-family: Impact, sans-serif;
+	font-size: 2em;
 }
-p{
-    
-}
+
 
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
