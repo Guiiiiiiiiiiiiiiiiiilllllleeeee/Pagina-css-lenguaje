@@ -11,7 +11,7 @@ header{
 	border-bottom: 3px solid var(--color-primario);
 }
 nav {
-	padding: 10px;
+	padding: 30px;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
@@ -48,7 +48,25 @@ iframe {
     height: auto;
     max-width: 600px; 
 }
-
+section {
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 1800px;
+	background-color: var(--color-blanco);
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+footer{
+  height:30px;
+  line-height:30px;
+  background:var(--color-primario);
+  color:black;
+  text-align:center;
+  position:bottom;
+  bottom:0;
+  left:0;
+  width:100%;
+}
 img {
     text-align: center;
     margin: 20px;
@@ -250,17 +268,7 @@ background-color: var(--color-primario-fondo);
 #micr{  
 border-radius: 10px;
 }
-footer{
-  height:30px;
-  line-height:30px;
-  background:var(--color-primario);
-  color:black;
-  text-align:center;
-  position:bottom;
-  bottom:0;
-  left:0;
-  width:100%;
-}
+
 
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
