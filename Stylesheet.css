@@ -553,6 +553,26 @@ box-shadow: none;
     outline-offset: 0.25px;
   }
 
+  input[type="file"]{
+    box-shadow: none;
+  }
+  input[type="file"]::file-selector-button{
+    background-color: var(--color-blanco);
+    transition: 0.5s;
+    border: 2px solid var(--color-primario) ;
+    border-radius: 0px 15px 0px 15px;
+  }
+  input[type="file"]::file-selector-button:hover{
+    background-color: var(--color-primario);
+  }
+
+  input[type="submit"]{
+    background-color: var(--color-blanco);
+    transition: 0.5s;
+    border: 2px solid var(--color-primario) ;
+    border-radius: 0px 15px 0px 15px;
+    height: 40px;
+  }
 
 
 
