@@ -428,6 +428,10 @@ form{
   box-shadow: 4px 4px 4px 2px var(--color-primario-fondo);
   }
 
+  #politicaid{
+    box-shadow: none;
+    }
+
 /*Fieldset login*/
 #sesion fieldset{
   background-color: var(--color-blanco);
@@ -488,10 +492,6 @@ form{
   margin-top: 8px;
 }
 
-
-#politicaid{
-box-shadow: none;
-}
 #logininiciar{
   background-color: var(--color-blanco);
   transition: 0.5s;
