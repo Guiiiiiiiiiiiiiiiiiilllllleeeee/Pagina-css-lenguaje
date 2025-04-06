@@ -505,9 +505,6 @@ box-shadow: none;
   background:var(--color-primario);
   color:black;
   text-align:center;
-  position:bottom;
-  bottom:0;
-  left:0;
   width:100%;
   }
   
