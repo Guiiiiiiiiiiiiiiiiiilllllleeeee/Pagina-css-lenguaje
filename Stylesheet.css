@@ -432,7 +432,7 @@ form{
 
 /*Filedset Comentarios*/
 fieldset{
-  background-color: var(--color-blanco);
+  background-color: var(--color-primario-fondo);
   border: none;
   border-radius: 15px;
   }
@@ -444,8 +444,7 @@ fieldset{
   }
 
   textarea{
-    border: none;
-    background-color: white;
+    background-color: var(--color-blanco);
     max-width: 400px;
     max-height: 60px;
     min-width: 200px;
@@ -461,7 +460,7 @@ fieldset{
     }
 
     textarea:hover{
-      background-color: var(--color-primario-fondo);
+      background-color: white;
     }
 
     textarea:focus{
@@ -481,6 +480,8 @@ fieldset{
   margin-left: 10px;
   margin-top: 8px;
 }
+
+
 #politicaid{
 box-shadow: none;
 }
@@ -535,15 +536,28 @@ box-shadow: none;
     display: none;
   }
   
-  #teimpoid{
+  /*INPUT range*/
+  input[type="range"]{
+  appearance: none;
   box-shadow: none;
-  
+  border:none;
+  background: transparent;
+  width: 200px;;
+  }
+  input[type="range"]::-webkit-slider-runnable-track{
+  background-color: var(--color-blanco);
+  cursor: pointer;
+  }
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid black;
+    outline-offset: 0.25px;
   }
 
 
 
 
-  
+
+
 @media screen and (max-width: 1000px) {
   *{
     font-size: 1em; /* Reduce el tamaño de fuente para pantallas pequeñas */
