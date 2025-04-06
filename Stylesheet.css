@@ -543,6 +543,7 @@ box-shadow: none;
 
 
 
+  
 @media screen and (max-width: 1000px) {
   *{
     font-size: 1em; /* Reduce el tamaño de fuente para pantallas pequeñas */
