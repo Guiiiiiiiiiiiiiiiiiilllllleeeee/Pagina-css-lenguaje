@@ -433,6 +433,63 @@ font-weight: bold;
 fieldset input{
 box-shadow: none;
 }
+
+#logininiciar{
+  background-color: var(--color-blanco);
+  transition: 0.5s;
+  border: 2px solid var(--color-primario) ;
+  border-radius: 0px 15px 0px 15px;
+  padding: 4px;
+  margin-left: 10px;
+  margin-top: 8px;
+  }
+  
+  #micr{  
+  border-radius: 10px;
+  }
+  /*footer*/
+  footer{
+  height:30px;
+  line-height:30px;
+  background:var(--color-primario);
+  color:black;
+  text-align:center;
+  position:bottom;
+  bottom:0;
+  left:0;
+  width:100%;
+  }
+  
+  #radiobt input{
+  box-shadow: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--color-primario);
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  }
+  #radiobt input:checked {
+    border: 6px solid var(--color-oscuro);
+  }
+  
+  /*Select multiple/option */
+  #op_id{
+    background-color: var(--color-blanco);
+    border: none;
+  }
+  #op_id::-webkit-scrollbar{
+    display: none;
+  }
+  
+  #teimpoid{
+  box-shadow: none;
+  
+  }
+
 @media screen and (max-width: 1000px) {
   *{
     font-size: 1em; /* Reduce el tamaño de fuente para pantallas pequeñas */
