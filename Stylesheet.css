@@ -444,8 +444,6 @@ form{
     background-color: var(--color-primario-fondo);
     border: none;
     border-radius: 15px;
-
-
   }
   fieldset label{
   font-weight: bold;
