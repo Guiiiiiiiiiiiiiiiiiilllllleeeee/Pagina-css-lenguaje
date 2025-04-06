@@ -425,3 +425,19 @@ font-weight: bold;
 fieldset input{
 box-shadow: none;
 }
+@media screen and (max-width: 1000px) {
+  *{
+    font-size: 1em; /* Reduce el tamaño de fuente para pantallas pequeñas */
+    position: relative; /* Cambia la posición a relativa para evitar problemas de superposición */
+
+  }
+  
+  #portada{
+    width: 80%;
+    margin-left: 300px;
+    margin-top: 200px;
+    margin-bottom: 0;
+  }
+  
+  
+}
