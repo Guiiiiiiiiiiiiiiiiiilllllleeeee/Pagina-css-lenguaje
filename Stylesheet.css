@@ -431,10 +431,17 @@ form{
 
 
 /*Filedset Comentarios*/
-fieldset{
-  background-color: var(--color-primario-fondo);
+#sesion fieldset{
+  background-color: var(--color-blanco);
   border: none;
   border-radius: 15px;
+  }
+  #fieldcom{
+    background-color: var(--color-primario-fondo);
+    border: none;
+    border-radius: 15px;
+
+
   }
   fieldset label{
   font-weight: bold;
